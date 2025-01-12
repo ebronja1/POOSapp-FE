@@ -17,7 +17,7 @@ const ImageUpload = () => {
     formData.append("file", selectedImage);
 
     try {
-      const response = await fetch("http://localhost:5108/upload", {
+      const response = await fetch("http://localhost:5108/api/Image/upload", {
         method: "POST",
         body: formData,
       });
